@@ -7,7 +7,6 @@ module.exports = withStoreConfig({
   },
   features: store.features,
   reactStrictMode: true,
-  
   images: {
     formats: ['image/avif', 'image/webp'],
     domains: [
