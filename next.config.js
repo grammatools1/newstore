@@ -7,7 +7,9 @@ module.exports = withStoreConfig({
   },
   features: store.features,
   reactStrictMode: true,
+  
   images: {
+    formats: ['image/avif', 'image/webp'],
     domains: [
       "medusa-public-images.s3.eu-west-1.amazonaws.com",
       "localhost",
