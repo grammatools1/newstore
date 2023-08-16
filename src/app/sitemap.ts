@@ -6,9 +6,9 @@ type Route = {
   lastModified: string;
 };
 
-const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-  : 'http://localhost:3000';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+  ? `https://${process.env.NEXT_PUBLIC_BASE_URL}`
+  : 'http://localhost:8000';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const routesMap = [''].map((route) => ({
